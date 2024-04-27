@@ -1,0 +1,6 @@
+.welcome-text{
+    background: #3182CE;
+    background: linear-gradient(to right, #3182CE 31%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

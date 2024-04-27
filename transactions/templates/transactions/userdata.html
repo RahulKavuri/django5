@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+
+            padding: 50px;
+            padding-bottom:50px;
+
+        }
+        h1 {
+                background: #316BCF;
+                background: linear-gradient(to right, #316BCF 0%, #000000 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+        }
+        .user-details {
+            background-color: #fff;
+            padding: 30x;
+
+            margin-bottom: 20px;
+        }
+        .user-details p {
+            margin: 10px 0; /* Reduce margin for spacing between fields */
+            padding: 15px 10px; /* Add padding for borders */
+            border-style: solid;
+            border-left-color: rgb(77,166,255);
+            border-left-width: 7px;
+            border-radius:8px;
+
+            width: 40%;
+
+         }
+
+        .user-details p strong {
+            font-weight: Roboto Mono;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Data</h1>
+    <div class="user-details">
+         <p><strong>First Name:</strong> {{ current_user.first_name }}</p>
+        <p><strong>Last Name:</strong> {{ current_user.last_name }}</p>
+        <p><strong>Email:</strong> {{ current_user.email }}</p>
+        <p><strong>Postal Code:</strong> {{ user_address.postal_code }}</p>
+        <p><strong>Street Address:</strong> {{ user_address.street_address }}</p>
+        <p><strong>City:</strong> {{ user_address.city }}</p>
+        <p><strong>Country:</strong> {{ user_address.country }}</p>
+        <p><strong>Bank Account Type:</strong> {{ bank_account.account_type }}</p>
+        <p><strong>Account Number:</strong> {{ bank_account.account_no }}</p>
+        <p><strong>Gender:</strong> {{ bank_account.gender }}</p>
+    </div>
+</body>
+</html>
